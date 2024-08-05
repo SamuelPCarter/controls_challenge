@@ -5,11 +5,11 @@ class Controller(BaseController):
     """
     A simple PID controller
     """
-    def __init__(self,):
-        # PID coefficients
-        self.p = 0.18  # Proportional gain: provides a faster response to errors
-        self.i = 0.08  # Integral gain: corrects accumulated errors over time
-        self.d = -0.05  # Derivative gain: smooths out control signal and reduces overshoot
+    def __init__(self):
+        # Further fine-tuned PID coefficients for improved performance
+        self.p = 0.21
+        self.i = 0.10
+        self.d = -0.015
         
         # Initialize integral of the error
         self.error_integral = 0
